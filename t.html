@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML LEARNING PORTAL</title>
+</head>
+<body bgcolor="#f4f4f9" link="navy" vlink="navy">    <table width="100%" cellspacing="15" cellpadding="10">
+    <tr>
+            <td width="25%" valign="top" bgcolor="#ffffff" style="border: 1px solid #dddddd;">
+        
+                <header align="center">
+  <img src="logo.png" alt="Project Logo" width="80" height="80">
+  <h1>HTML LEARNING PORTAL</h1>
+  <p><em>Pure HTML Edition</em></p>
+  <hr>
+</header>
+
+                <nav aria-label="Table of contents">
+          <h2>📖 Course Navigation</h2>
+          <ol>
+            <li><a href="#lecture1">🌐 How The Internet Works</a></li>
+            <li><a href="#lecture2">📝 Intro to HTML</a></li>
+            <li><a href="#lecture3">📁 File Paths & Structure</a></li>
+            <li><a href="#lecture4">✍️ HTML Forms</a></li>
+            <li><a href="#lecture5">🎬 Media Elements</a></li>
+
+          </ol>
+        </nav>
+
+        <hr>
+
+                <section>
+          <h2>🏆 Course Complete! 🏆</h2>
+          <p><b>Visual Progress:</b></p>
+          <progress value="6" max="6" style="width: 100%;">100%</progress>
+        </section>
+      </td>
+
+            <td width="75%" valign="top" bgcolor="#ffffff" style="border: 1px solid #dddddd;">
+      
+        <h1 align="center"> Welcome to the Ultimate HTML Portal </h1>
+        <p align="center">This portal contains all the things that requires to master HTML in engaing manner, built using only HTML for a creative and unique presentation.</p>
+        <hr>
+
+                <section id="lecture1">
+          <h2>🌐 Lecture 1 — How Does The Internet Work?</h2>
+          <details open>
+            <summary><strong>▶️ Lecture 1: Core Concepts of the Internet</strong></summary>
+            <article>
+              <h3>The 5 Core Principles</h3>
+              <p>The internet isn't magic. It's a series of logical solutions to fundamental problems.</p>
+                <center><img src="image_datacenter.jpg" alt="A modern data center server room" width="50%"></center><br>
+            <table width="100%" bgcolor="#f8f9f9" cellpadding="15" border="1" bordercolor="#eaf2f8">
+<tr>
+<td>
+    <h3>The 5 Core Principles</h3>
+    <p>The internet isn't magic. It's a series of logical solutions to fundamental problems.</p>
+    
+    <ol>
+        <li>
+            <b>The Need to Share Information:</b> At its core, we need to get data from Computer A to Computer B. The simplest solution is a physical cable, creating a <strong><font color="#2980b9">direct link</font></strong> to send bits (1s and 0s).
+        </li>
+        <br>
+        <li>
+            <b>The Problem of Scale:</b> Connecting every computer to every other is impossible. The solution is a central device (a <strong><font color="#2980b9">Switch</font></strong>) that creates a <strong>Local Network</strong>.
+        </li>
+        <br>
+        <li>
+            <b>Connecting Networks:</b> To connect different local networks, we use a special device called a <strong><font color="#2980b9">Router</font></strong>. Its job is to pass traffic between networks.
+            <blockquote><em>"The <strong>Internet</strong> is not a cloud; it is a 'network of networks' connected by routers."</em></blockquote>
+        </li>
+        <br>
+        <li>
+            <b>The Problem of Finding Anyone:</b> To find a specific computer among millions, every device needs a unique address. This is the <strong><font color="#2980b9">IP Address</font></strong>.
+        </li>
+        <br>
+        <li>
+            <b>The Problem of Reliability:</b> Sending large files at once is risky. The solution is to break data into thousands of small, numbered <strong><font color="#2980b9">Packets</font></strong> using a set of rules called <strong>TCP/IP</strong>.
+        </li>
+    </ol>
+</td>
+</tr>
+</table>
+              <hr>
+              <h3>IP Addresses, MAC Addresses, and Ports</h3>
+              <p>A <strong>MAC Address</strong> is a permanent, physical serial number for your hardware. An <strong>IP Address</strong> is its address on the network. A <strong>Port Number</strong> is a door to a specific application on that device.</p>
+              <table width="100%" border="1" cellpadding="8">
+                <tr bgcolor="#eaf2f8"><th>Port Type</th><th>Range</th><th>Purpose & Examples</th></tr>
+                <tr><td><strong>Well-Known</strong></td><td>0 - 1023</td><td>Standard services (Requires admin rights). Ex: <b>80 (HTTP)</b>, <b>443 (HTTPS)</b>, <b>22 (SSH)</b>.</td></tr>
+                <tr><td><strong>Registered</strong></td><td>1024 - 49151</td><td>Specific applications (No admin rights). Ex: <b>27017 (MongoDB)</b>, <b>3000 (React Dev)</b>.</td></tr>
+                <tr><td><strong>Dynamic</strong></td><td>49152 - 65535</td><td>Temporary ports assigned to your browser for outgoing connections. Not used for servers.</td></tr>
+              </table>
+            </article>
+          </details>
+        </section>
+        <hr>
+
+                <section id="lecture2">
+          <h2>📝 Lecture 2 — HTML: HyperText Markup Language</h2>
+          <details open>
+            <summary><strong>▶️ Lecture 2: The Building Blocks of the Web</strong></summary>
+            <article>
+              <h3>What is HTML?</h3>
+              <p>HTML is the standard language used to create and structure the content of a webpage. It uses "tags" to give meaning to the content.</p>
+                <center><img src="image_html_code.jpg" alt="HTML code on a computer screen" width="40%"></center><br>
+              <table width="100%" border="1" cellpadding="8">
+                <tr bgcolor="#eaf2f8">
+                  <td width="50%"><strong>HyperText</strong></td>
+                  <td width="50%"><strong>Markup Language</strong></td>
+                </tr>
+                <tr>
+                  <td>Refers to links that connect web pages to one another, creating a "web" of information.</td>
+                  <td>Means you use "tags" to surround content, giving it meaning and structure (e.g., marking text as a heading).</td>
+                </tr>
+              </table>
+              <hr>
+              <h3>Essential HTML Tags</h3>
+              <p>The following are the foundational building blocks of any webpage.</p>
+              <h4>Lists: &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</h4>
+              <p>Used to group related items. <code>&lt;ul&gt;</code> for bulleted lists, <code>&lt;ol&gt;</code> for numbered lists.</p>
+              <table bgcolor="#2d2d2d" width="100%"><tr><td><pre><font color="white">
+&lt;ul&gt;
+  &lt;li&gt;Tea Bag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;First, boil the water.&lt;/li&gt;
+&lt;/ol&gt;
+              </font></pre></td></tr></table>
+              <h4>Links (Anchor): &lt;a&gt; and Image: &lt;img&gt;</h4>
+              <p>Creates a clickable hyperlink. Use <code>target="_blank"</code> to open in a new tab. The <code>&lt;img&gt;</code> tag embeds an image.</p>
+              <center>
+                <figure>
+                  <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" width="300" alt="This is a Dog Photo">
+                  <figcaption><em>Live example of the &lt;img&gt; tag.</em></figcaption>
+                </figure>
+              </center>
+            </article>
+          </details>
+        </section>
+        <hr>
+
+                <section id="lecture3">
+          <h2>📁 Lecture 3 — File Paths, Boilerplate, & Structure</h2>
+          <details open>
+            <summary><strong>▶️ Lecture 3: Organizing Your Project</strong></summary>
+            <article>
+              <h3>Part 1: The File Path System</h3>
+              <p>A website is a collection of files in folders. A <strong>file path</strong> is the exact address the browser needs to find and link these files together.</p>
+                <center><img src="image_folder_structure.jpg" alt="A digital folder structure diagram" width="30%"></center><br>
+              <h4>Relative File Paths (For Your Own Project Files)</h4>
+              <p>Directions to a file starting from your current location. Use these 99% of the time.</p>
+              <p><b>Scenario 1: Same Folder:</b> Just use the filename: <code>&lt;a href="about.html"&gt;About&lt;/a&gt;</code></p>
+              <p><b>Scenario 2: Into a Sub-Folder:</b> Go down: <code>&lt;img src="images/logo.png"&gt;</code></p>
+              <p><b>Scenario 3: Out of a Folder:</b> Go up, then down: <code>&lt;img src="../images/logo.png"&gt;</code></p>
+              <hr>
+              <h3>Part 2: The HTML Boilerplate</h3>
+              <p>The boilerplate is a standard template that you must start every HTML file with. It gives the browser critical setup information before rendering your content.</p>
+              <table bgcolor="#2d2d2d" width="100%"><tr><td><pre><font color="white">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+              </font></pre></td></tr></table>
+              <blockquote>The boilerplate is the non-negotiable foundation of any professional webpage.</blockquote>
+              <hr>
+              <h3>Part 3: Page Structure & Semantics</h3>
+              <p>Using tags with meaning (semantics) is better than using <code>&lt;div&gt;</code> for everything.</p>
+              <table width="100%" border="1" cellpadding="8">
+                <tr bgcolor="#eaf2f8"><th>Semantic Tag</th><th>Purpose</th></tr>
+                <tr><td><strong>&lt;header&gt;</strong></td><td>Contains introductory content for a page or section, like a logo and navigation.</td></tr>
+                <tr><td><strong>&lt;main&gt;</strong></td><td>Contains the main, unique content of the page. Should only be used once per page.</td></tr>
+                <tr><td><strong>&lt;footer&gt;</strong></td><td>Contains closing content for a page or section, like copyright info and contact links.</td></tr>
+              </table>
+            </article>
+          </details>
+        </section>
+        <hr>
+
+                <section id="lecture4">
+          <h2>✍️ Lecture 4 — Forms in HTML</h2>
+          <details open>
+            <summary><strong>▶️ Lecture 4: Collecting User Input</strong></summary>
+            <article>
+              <h3>The Two-Way Street</h3>
+              <blockquote>The web is not just a brochure. It needs a way to collect information from the user and send it back to the server. This is the purpose of the HTML <strong>&lt;form&gt;</strong> element.</blockquote>
+                <center><img src="image_online_form.png" alt="A clean, modern online registration form" width="56%"></center><br>
+              <h3>Live Demo Form</h3>
+              <p>Here is a complete form that uses all the elements we've discussed below.</p>
+              <table width="100%" bgcolor="#f8f9f9" cellpadding="20" border="0">
+<tr>
+<td align="center">
+
+  <form action="#" method="get">
+    <fieldset border="1" bordercolor="#d4e6f1">
+      <legend>
+        <font color="#1f618d" size="+1"><strong>Event Registration</strong></font>
+      </legend>
+      
+      <table cellpadding="8" cellspacing="5">
+        <tr>
+          <td align="right">
+            <b><label for="fullName">Full Name:</label></b>
+          </td>
+          <td>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+          </td>
+        </tr>
+        
+        <tr>
+          <td align="right" valign="top">
+            <b><lsbel for="T-Shirt Size">T shirt Size</lsbel>:</b>
+          </td>
+          <td>
+            <input type="radio" id="sizeS" name="shirtSize" value="small"><label for="sizeS">Small</label><br>
+            <input type="radio" id="sizeM" name="shirtSize" value="medium"><label for="sizeM">Medium</label><br>
+            <input type="radio" id="sizeL" name="shirtSize" value="large"><label for="sizeL">Large</label>
+          </td>
+        </tr>
+        
+        <tr>
+          <td align="right">
+            <b><label for="country">Country:</label></b>
+          </td>
+          <td>
+            <select id="country" name="country">
+              <option value="">--Please choose an option--</option>
+              <option value="in">India</option>
+              <option value="us">USA</option>
+            </select>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>&nbsp;</td> <td>
+            <button type="submit">
+              <strong><font size="+1">Register Now</font></strong>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+
+</td>
+</tr>
+</table>
+            </article>
+          </details>
+        </section>
+        <hr>
+
+                <section id="lecture5">
+          <h2>🎬 Lecture 5 — HTML Media</h2>
+          <details open>
+            <summary><strong>▶️ Lecture 5: Native Video and Audio</strong></summary>
+            <article>
+              <h3>Beyond Text & Images</h3>
+              <blockquote>The web needed a standardized, native way to embed video and audio without insecure third-party plugins like Flash. The solution was the HTML5 <strong>&lt;video&gt;</strong> and <strong>&lt;audio&gt;</strong> tags.</blockquote>
+                <center><img src="image_media_tablet.png" alt="A person watching a video on a tablet" width="40%"></center><br>
+              <h3>Embedding Methods: Simple vs. Professional</h3>
+              <p>The "Professional" method using <code>&lt;source&gt;</code> is recommended for public websites to ensure maximum browser compatibility.</p>
+              <table width="100%" border="1" cellpadding="8">
+                <tr bgcolor="#eaf2f8"><th>Feature</th><th>Professional Method (<code>&lt;source&gt;</code>)</th><th>Simple Method (<code>src</code> attribute)</th></tr>
+                <tr>
+                  <td><strong>Example</strong></td>
+                  <td><table bgcolor="#2d2d2d" width="100%"><tr><td><pre><font color="white">
+&lt;video controls&gt;
+ &lt;source src="vid.mp4"&gt;
+ &lt;source src="vid.webm"&gt;
+&lt;/video&gt;
+                    </font></pre></td></tr></table></td>
+                  <td><table bgcolor="#2d2d2d" width="100%"><tr><td><pre><font color="white">
+&lt;video src="vid.mp4" controls&gt;&lt;/video&gt;
+                    </font></pre></td></tr></table></td>
+                </tr>
+                <tr><td><strong>Compatibility</strong></td><td><strong>Excellent.</strong> Provides multiple formats as fallbacks.</td><td><strong>Good, but risky.</strong> Fails if the browser doesn't support the single format.</td></tr>
+              </table>
+              <hr>
+              <h3>HTML Symbol Entities</h3>
+              <p>To display special reserved characters in HTML, you use character entities.</p>
+              <table width="100%" border="1" cellpadding="8">
+                <tr bgcolor="#eaf2f8"><th>Symbol</th><th>Description</th><th>Entity Name (Easy)</th></tr>
+                <tr><td align="center">©</td><td>Copyright</td><td><code>&amp;copy;</code></td></tr>
+                <tr><td align="center">&lt;</td><td>Less-than</td><td><code>&amp;lt;</code></td></tr>
+                <tr><td align="center">&gt;</td><td>Greater-than</td><td><code>&amp;gt;</code></td></tr>
+              </table>
+            </article>
+          </details>
+        </section>
+        <hr>
+        
+     
+        
+            <table width="100%" bgcolor="#f8f9f9" cellpadding="20" border="0">
+<tr>
+<td align="center">
+
+    <section id="quiz">
+      <form>
+        <fieldset border="1" bordercolor="#d4e6f1">
+          <legend>
+            <h2><font color="#1f618d">🤔 Quick Quiz</font></h2>
+          </legend>
+          
+          <table cellpadding="10" width="100%">
+            <tr>
+              <td valign="top"><strong>1)</strong></td>
+              <td>
+                <p><strong>What does the <code>&lt;source&gt;</code> tag in a video element do?</strong></p>
+                <input type="radio" id="q1a" name="q1" value="wrong"><label for="q1a"> Sets the poster image.</label><br>
+                <input type="radio" id="q1b" name="q1" value="correct"><label for="q1b"> Provides multiple video formats for browser compatibility.</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td valign="top"><strong>2)</strong></td>
+              <td>
+                <p><strong>What is the purpose of the <code>name</code> attribute on radio buttons?</strong></p>
+                <input type="radio" id="q2a" name="q2" value="correct"><label for="q2a"> To group multiple radio buttons so only one can be selected.</label><br>
+                <input type="radio" id="q2b" name="q2" value="wrong"><label for="q2b"> To uniquely identify a single radio button for its label.</label>
+              </td>
+            </tr>
+            
+            <tr>
+              <td valign="top"><strong>3)</strong></td>
+              <td>
+                <p><strong>What is the primary function of DNS?</strong></p>
+                <input type="radio" id="q3a" name="q3" value="wrong"><label for="q3a"> To break files into small packets for sending.</label><br>
+                <input type="radio" id="q3b" name="q3" value="correct"><label for="q3b"> To translate domain names (like google.com) into IP addresses.</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td valign="top"><strong>4)</strong></td>
+              <td>
+                <p><strong>In a file path, what does the <code>../</code> syntax mean?</strong></p>
+                <input type="radio" id="q4a" name="q4" value="correct"><label for="q4a"> Go up one directory.</label><br>
+                <input type="radio" id="q4b" name="q4" value="wrong"><label for="q4b"> Go to the root directory.</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td valign="top"><strong>5)</strong></td>
+              <td>
+                <p><strong>Which attribute adds the play/pause button and timeline to a <code>&lt;video&gt;</code> tag?</strong></p>
+                <input type="radio" id="q5a" name="q5" value="wrong"><label for="q5a"> play</label><br>
+                <input type="radio" id="q5b" name="q5" value="correct"><label for="q5b"> Controls</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>
+                <br>
+                <button type="submit"><strong><font size="+1">Submit Answers</font></strong></button>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </section>
+
+</td>
+</tr>
+</table>
+<hr
+                <section id="feedback">
+          <h2>📨 Feedback Form</h2>
+          <form action="#" method="post">
+            <fieldset>
+              <legend>We value your opinion!</legend>
+              <table cellpadding="5">
+                <tr>
+                  <td align="right"><label for="fbName">Your Name:</label></td>
+                  <td><input type="text" id="fbName" name="name" size="40"></td>
+                </tr>
+                <tr>
+                  <td align="right" valign="top"><label>Rating:</label></td>
+                  <td>
+                    ★☆☆☆☆ <input type="radio" name="rating" value="1"><br>
+                    ★★☆☆☆ <input type="radio" name="rating" value="2"><br>
+                    ★★★☆☆ <input type="radio" name="rating" value="3"><br>
+                    ★★★★☆ <input type="radio" name="rating" value="4"><br>
+                    ★★★★★ <input type="radio" name="rating" value="5">
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right" valign="top"><label for="fbComments">Comments:</label></td>
+                  <td><textarea id="fbComments" name="comments" rows="5" cols="70" placeholder="Share your thoughts..."></textarea></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><button type="submit"><strong>✉️ Send Feedback</strong></button></td>
+                </tr>
+              </table>
+            </fieldset>
+          </form>
+        </section>
+      </td>
+    </tr>
+  </table>
+
+    <table width="100%">
+    <tr><td bgcolor="#dddddd" height="1"></td></tr>   </table>
+  <footer align="center">
+    <p>&copy; 2025 HTML LECTURE PORTAL. All Rights Reserved.</p>
+   
+
+</body>
+</html>
